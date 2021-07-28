@@ -1,0 +1,70 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+/* -------------------------------------------THE BODY OF THE WEBPAGE-------------------------------------------------------- */
+
+.body {
+  background: url(./resources/snakebg.jpg);
+  min-height: 100vh;
+  background-size: 100vw 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+/* --------------------------------------------BOARD------------------------------------------------------ */
+
+#board {
+  background: linear-gradient(blue, pink, purple);
+  border: 4px solid white;
+  width: 90vmin;
+  height: 92vmin;
+  display: grid;
+  grid-template-columns: repeat(18, 1fr); /*18colums grid*/
+  grid-template-rows: repeat(18, 1fr); /*18rows grid*/
+}
+
+/* ----------------------------------------CLASS FOR SNAKE AND FOOD---------------------------------------------- */
+
+/* This is snake head(Mundi) */
+.head {
+  background: linear-gradient(orange, red);
+  border: 0.25vmin solid black;
+  border-radius: 100%;
+  transform: scale(1.2);
+}
+
+/* This is snake body */
+.snake {
+  background: linear-gradient(orange, white, green);
+  border: 0.25vmin solid white;
+  border-radius: 100%;
+}
+
+/* This is food */
+.food {
+  background: linear-gradient(yellow, orange);
+  border: 0.25vmin solid black;
+  border-radius: 100%;
+}
+
+/* ---------------------------------SCORES BLOCK----------------------- */
+#scoreBox {
+  position: absolute;
+  top: 9vw;
+  right: 10vw;
+  font-size: 3vw;
+  font-weight: bold;
+  color: white;
+  display: flex;
+}
+
+#hiscoreBox {
+  position: absolute;
+  top: 9vw;
+  left: 10vw;
+  font-size: 3vw;
+  font-weight: bold;
+  color: white;
+}
